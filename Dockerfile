@@ -5,7 +5,7 @@ FROM ubuntu:14.04
 WORKDIR /app
 
 # Install necessary packages
-RUN sudo apt-get update && apt-get -y install dialog apt-utils wget xz-utils git vim haskell-platform
+RUN sudo apt-get update && apt-get -y install dialog apt-utils wget xz-utils git vim haskell-platform libncurses5-dev
 
 # Pull LLVM-3.5 binary for Ubuntu
 RUN wget http://releases.llvm.org/3.5.0/clang+llvm-3.5.0-x86_64-linux-gnu-ubuntu-14.04.tar.xz
